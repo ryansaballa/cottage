@@ -1,5 +1,5 @@
 body {
-    color: #2b283a;
+    color: #2A4759;
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
@@ -12,7 +12,7 @@ h3 {
 }
 
 h1 {
-    color: whitesmoke;
+    color: #2A4759;
     font-size: 1.75rem;
 }
 
@@ -43,7 +43,7 @@ p {
 /* ----- LINKS ----- */
 
 a {
-    color: #F79B72;
+    color: #2A4759;
     text-decoration: underline dotted; 
 }
 
@@ -92,7 +92,9 @@ footer {
     padding: 1.25em 0;
 }
 
-header, 
+header{
+    background-color: #DDDDDD;
+}
 .section-two {
     background-color: #2A4759;
 }
@@ -111,13 +113,15 @@ header,
     width: 100%;
     display: block;
     max-width: 640px;
+    max-height: 400px;
     margin: 0 auto 2em;
 }
 
 .section-two-image-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 1.2em;
+    margin: 2em 0;
 }
 
 .feature-image {
@@ -129,6 +133,11 @@ header,
     flex: 1 260px;
 }
 
+.feature-item img{
+    margin-bottom: 0.25em;
+}
+
+
 footer {
     text-align: center;
     color: #2A4759;
@@ -137,7 +146,7 @@ footer {
 /* ----- NAVIGATION ----- */
 
 nav a {
-    color: #fff;
+    color: #2A4759;
     text-decoration: none;
     font-size: 1.125rem;
     padding: 0.85em 0;
@@ -148,6 +157,38 @@ ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
+}
+
+
+/* ----- Logo ---------------*/
+
+.logo{
+    max-width: 220px;
+    max-height: 220px;
+}
+
+/* ----- Image Gallery ----- */ 
+
+.img-gallery{
+    max-width: 1200px;
+    line-height: 0;
+    margin: 2em auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+
+}
+
+.featured-img{ 
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+.featured-img img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    
 }
 
 /* ----- MEDIA QUERIES ----- */
